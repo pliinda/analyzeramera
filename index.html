@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kattentusiaster</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Välkommen till en sida för galna kattentusiaster</h1>
+        <form id="catForm">
+            <label for="catName">Kattens namn:</label>
+            <input type="text" id="catName" name="catName" required>
+
+            <label for="catAge">Kattens ålder:</label>
+            <input type="number" id="catAge" name="catAge" required>
+
+            <label for="catDescription">Beskrivning:</label>
+            <textarea id="catDescription" name="catDescription" rows="4" required></textarea>
+
+            <label for="catImage">Ladda upp kattbild:</label>
+            <input type="file" id="catImage" name="catImage" accept="image/*" required>
+
+            <button type="submit">Lägg till katt</button>
+        </form>
+
+        <div id="catsList">
+            <!-- Katter kommer att visas här -->
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
